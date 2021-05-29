@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from galapp.models import Albom, Photos
+from galapp.models import Albom, Photos, Chosen
 
 
 class PhotosAdmin(admin.ModelAdmin):
@@ -12,3 +12,4 @@ class PhotosAdmin(admin.ModelAdmin):
 
 admin.site.register(Photos, PhotosAdmin)
 admin.site.register(Albom)
+admin.site.register(Chosen)

@@ -1,0 +1,25 @@
+{% extends 'shablon.html' %}
+{% block content %}
+<body style="background-size: 100%; background-image: url('https://image.freepik.com/free-vector/programming-code-background_46706-811.jpg') ">
+    <div class="container" style="max-width: 500px; color: aliceblue">
+        {% if not photos %}
+            <h2>НЕТ Фоток</h2>
+        {% else %}
+            {% for photo in photos %}
+                <div class="list-group">
+                  <a href="{% url 'photo' photo.id %}" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <img class="avatar" src="/uploads/{{ photo.foto }}" width="150" height="200" alt="user picture">
+                      <h5 class="mb-1">Проект: {{ photo.text }}</h5>
+                      <small class="text-muted">
+                        <p>Дата создания: {{ photo.created_at }}</p>
+                      </small>
+                    </div>
+                  </a>
+                </div>
+                </br>
+            {% endfor %}
+        {% endif %}
+    </div>
+</body>
+{% endblock content %}

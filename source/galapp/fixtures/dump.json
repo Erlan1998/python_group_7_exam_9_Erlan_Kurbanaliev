@@ -36,6 +36,42 @@
   }
 },
 {
+  "model": "galapp.photos",
+  "pk": 4,
+  "fields": {
+    "foto": "user_pics/4.gif",
+    "text": "Это цифра 4",
+    "created_at": "2021-05-29T07:11:54.388Z",
+    "user": 1,
+    "album": 1,
+    "is_private": false
+  }
+},
+{
+  "model": "galapp.photos",
+  "pk": 5,
+  "fields": {
+    "foto": "user_pics/а.jpg",
+    "text": "Это буква А",
+    "created_at": "2021-05-29T07:12:22.693Z",
+    "user": 2,
+    "album": null,
+    "is_private": false
+  }
+},
+{
+  "model": "galapp.photos",
+  "pk": 6,
+  "fields": {
+    "foto": "user_pics/б.jpg",
+    "text": "Это буква Б",
+    "created_at": "2021-05-29T07:12:52.720Z",
+    "user": 2,
+    "album": null,
+    "is_private": false
+  }
+},
+{
   "model": "galapp.albom",
   "pk": 1,
   "fields": {
@@ -59,6 +95,24 @@
     "is_staff": true,
     "is_active": true,
     "date_joined": "2021-05-29T06:26:47.538Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$lMPiyyTZirIEvbZsVOGUCj$oBVyTXJ3mwJiC3FcB945Z7SzZBO0XBQXIwkqiVKAcss=",
+    "last_login": "2021-05-29T07:09:37Z",
+    "is_superuser": false,
+    "username": "erlan",
+    "first_name": "ERLAN",
+    "last_name": "Kurbanaliev",
+    "email": "kurbanalieverlan@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-05-29T07:09:17Z",
     "groups": [],
     "user_permissions": []
   }

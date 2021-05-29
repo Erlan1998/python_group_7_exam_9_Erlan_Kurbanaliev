@@ -16,3 +16,7 @@ class Albom(models.Model):
     author = models.ForeignKey(get_user_model(), null=False, blank=False, related_name='Albom', verbose_name='автор', on_delete=models.CASCADE)
     data = models.DateField(auto_now_add=True)
 
+
+class Chosen(models.Model):
+    photo = models.ForeignKey('galapp.Photos', related_name='Chosen', verbose_name='избранные', on_delete=models.CASCADE)
+    user = models.ForeignKey(get_user_model(),  null=False, blank=False, related_name='Chosen', on_delete=models.CASCADE)

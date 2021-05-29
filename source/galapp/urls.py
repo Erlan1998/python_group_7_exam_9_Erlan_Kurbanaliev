@@ -6,10 +6,10 @@ from galapp.views import (
     PhotosUpdateView,
     PhotosDeleteView,
     AlbomIndexView,
-AlbomDetail,
-AlbomCreate,
-AlbomUpdateView,
-AlbomDelete
+    AlbomDetail,
+    AlbomCreate,
+    AlbomUpdateView,
+    AlbomDelete
 )
 
 urlpatterns = [

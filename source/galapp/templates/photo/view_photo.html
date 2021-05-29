@@ -10,10 +10,10 @@
         <p>У кого в избранных: {% for user in user_obj %}<a href="">{{ user }}</a> {% if not forloop.last %}, {% endif %}{% endfor %}</p>
         <p>Автор: {{ photos.user }}</p>
         <p>Date of creation: {{ photos.created_at }}</p>
-{#        {% if user.is_authenticated %}#}
-{#        <a href="{% url 'task_update' list.id %}"><button type="button" class="btn btn-warning">Редактировать!</button></a>#}
-{#        <a href="{% url 'task_delete' list.id %}"><button type="button" class="btn btn-secondary">Удаление!</button></a>#}
-{#        {% endif %}#}
+        {% if user.is_authenticated %}
+        <a href="{% url 'photo_update' photos.id %}"><button type="button" class="btn btn-warning">Редактировать!</button></a>
+        <a href="{% url 'photo_delete' photos.id %}"><button type="button" class="btn btn-secondary">Удаление!</button></a>
+        {% endif %}
     </div>
 </body>
 

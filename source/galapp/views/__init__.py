@@ -1,1 +1,1 @@
-from galapp.views.photos import IndexView, PhotoDetail
+from galapp.views.photos import IndexView, PhotoDetail, PhotosCreate, PhotosUpdateView, PhotosDeleteView

@@ -1,5 +1,25 @@
 [
 {
+  "model": "galapp.albom",
+  "pk": 1,
+  "fields": {
+    "name": "Цифры",
+    "description": "Сдесь фотки цифр",
+    "author": 1,
+    "data": "2021-05-29"
+  }
+},
+{
+  "model": "galapp.albom",
+  "pk": 2,
+  "fields": {
+    "name": "Пейзажи",
+    "description": "Все красивые фотки природы!",
+    "author": 1,
+    "data": "2021-05-29"
+  }
+},
+{
   "model": "galapp.photos",
   "pk": 1,
   "fields": {
@@ -16,7 +36,7 @@
   "pk": 2,
   "fields": {
     "foto": "user_pics/2.gif",
-    "text": "Это фото 2",
+    "text": "Это фото номер 2",
     "created_at": "2021-05-29T06:38:09.923Z",
     "user": 1,
     "album": 1,
@@ -72,13 +92,79 @@
   }
 },
 {
-  "model": "galapp.albom",
+  "model": "galapp.photos",
+  "pk": 7,
+  "fields": {
+    "foto": "user_pics/5.jpg",
+    "text": "Это фото 5",
+    "created_at": "2021-05-29T11:29:26.431Z",
+    "user": 2,
+    "album": 1,
+    "is_private": false
+  }
+},
+{
+  "model": "galapp.photos",
+  "pk": 8,
+  "fields": {
+    "foto": "user_pics/2_WKFH0J4.gif",
+    "text": "sdfsdfsdf",
+    "created_at": "2021-05-29T11:37:05.970Z",
+    "user": 2,
+    "album": 1,
+    "is_private": true
+  }
+},
+{
+  "model": "galapp.photos",
+  "pk": 10,
+  "fields": {
+    "foto": "user_pics/г.jpg",
+    "text": "test г",
+    "created_at": "2021-05-29T11:41:43.022Z",
+    "user": 1,
+    "album": 1,
+    "is_private": true
+  }
+},
+{
+  "model": "galapp.photos",
+  "pk": 11,
+  "fields": {
+    "foto": "user_pics/пей1.jpg",
+    "text": "Красотаааа",
+    "created_at": "2021-05-29T13:20:24.135Z",
+    "user": 1,
+    "album": 2,
+    "is_private": true
+  }
+},
+{
+  "model": "galapp.photos",
+  "pk": 12,
+  "fields": {
+    "foto": "user_pics/пей2.jpg",
+    "text": "вааау",
+    "created_at": "2021-05-29T13:20:41.554Z",
+    "user": 1,
+    "album": 2,
+    "is_private": false
+  }
+},
+{
+  "model": "galapp.chosen",
   "pk": 1,
   "fields": {
-    "name": "Цифры",
-    "description": "Сдесь фотки цифр",
-    "author": 1,
-    "data": "2021-05-29"
+    "photo": 1,
+    "user": 2
+  }
+},
+{
+  "model": "galapp.chosen",
+  "pk": 2,
+  "fields": {
+    "photo": 2,
+    "user": 2
   }
 },
 {
@@ -86,7 +172,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$260000$D4MvRKpwJh6NTs8BtMWftm$XVeMw1Z8cCfaKHSqnY9lpcg1SuwxWDmWvlbMoZi0GsQ=",
-    "last_login": "2021-05-29T06:26:54.146Z",
+    "last_login": "2021-05-29T11:38:17.277Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
@@ -104,7 +190,7 @@
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$260000$lMPiyyTZirIEvbZsVOGUCj$oBVyTXJ3mwJiC3FcB945Z7SzZBO0XBQXIwkqiVKAcss=",
-    "last_login": "2021-05-29T07:09:37Z",
+    "last_login": "2021-05-29T13:59:52.363Z",
     "is_superuser": false,
     "username": "erlan",
     "first_name": "ERLAN",
